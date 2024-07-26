@@ -1,0 +1,6 @@
+def print_full_name(first, last):
+    print('Hello'+' '+a+' '+b+'!'+' '+'You just delved into python'+'.')
+if __name__='__main__':
+    a=intput()
+    b=intput()
+    print_full_name(a,b)
