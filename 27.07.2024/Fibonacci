@@ -1,0 +1,34 @@
+#Iterrative function
+a=int(input())
+sum=0
+b=[0,1]
+for i in range(1,a):
+    sum=b[i]+b[i-1]
+    b.append(sum)
+if a==0:
+    print(f"The Fibonacci series of 0 is [0]")
+elif a==1:
+    print(f"The Fibonacci series of {a} is {b}")
+elif a>1:
+    print(f"The Fibonacci series of {a} is {b}")
+else:
+    print("Invalid input")
+#Recurrsive function 
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    else:
+        l = fibonacci(n - 1)
+        l.append(l[-1] + l[-2])
+        return l
+
+n=int(input())
+res=fibonacci(n)
+if res!=0:
+    print(res)
+else:
+    print("Invalid input")
