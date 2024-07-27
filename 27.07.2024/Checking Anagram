@@ -1,0 +1,11 @@
+try:
+    a=input().lower()
+    b=input().lower()
+    if len(a)==len(b):
+        
+        if sorted(a) == sorted(b):
+            print("It's Anagram" )
+    else:
+        print("It's not a anagram")
+except ValueError :
+    print ("invalid input ")
