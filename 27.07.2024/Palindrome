@@ -1,0 +1,7 @@
+#checking the input should be same when it is read from backward and forward direction 
+a=input()
+b=a[::-1]
+if a==b:
+    print(f"{a} is palindrome")
+else:
+    print(f"{a} is not a palindrome")
