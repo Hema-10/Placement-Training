@@ -1,0 +1,5 @@
+def half_right_pyramid(n):
+    for i in range(1, n + 1):
+        print('*' * i)
+rows = int(input())
+half_right_pyramid(rows)
