@@ -1,10 +1,10 @@
-def hcf(a, b):
+def gcd(a, b):
     if(b == 0):
         return a
     else:
-        return hcf(b, a % b)
+        return gcd(b, a % b)
 
 a =int(input())
 b =int(input())
 print(f"The gcd of {a} and {b} is : ", end="")
-print(hcf(a, b))
+print(gcd(a, b))
